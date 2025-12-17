@@ -1,0 +1,159 @@
+.home {
+  min-height: 100vh;
+}
+
+/* Hero section styles */
+.hero-section {
+  background: linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.7)),
+    url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200') center/cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #f4e4c1;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #d4a574;
+  color: #2c1810;
+}
+
+.btn-primary:hover {
+  background-color: #b8915f;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(212, 165, 116, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #f4e4c1;
+  border: 2px solid #f4e4c1;
+}
+
+.btn-secondary:hover {
+  background-color: #f4e4c1;
+  color: #2c1810;
+  transform: translateY(-3px);
+}
+
+/* Features section */
+.features-section {
+  padding: 80px 20px;
+  background-color: #f9f5f0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #2c1810;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2c1810;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Hours section */
+.hours-section {
+  padding: 80px 20px;
+  background-color: #2c1810;
+  color: #f4e4c1;
+}
+
+.hours-section .section-title {
+  color: #f4e4c1;
+}
+
+.hours-content {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hours-info,
+.location-info {
+  text-align: center;
+}
+
+.hours-info h3,
+.location-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #d4a574;
+}
+
+.hours-info p,
+.location-info p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}

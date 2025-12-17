@@ -1,0 +1,68 @@
+.menu-page {
+  min-height: 100vh;
+  background-color: #f9f5f0;
+  padding-bottom: 60px;
+}
+
+/* Header section */
+.menu-header {
+  background-color: #2c1810;
+  color: #f4e4c1;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.menu-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.menu-header p {
+  font-size: 1.3rem;
+  color: #d4a574;
+}
+
+/* Category filter buttons */
+.category-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: 2px solid #2c1810;
+  background-color: white;
+  color: #2c1810;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #2c1810;
+  color: #f4e4c1;
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background-color: #d4a574;
+  border-color: #d4a574;
+  color: white;
+}
+
+/* Menu items grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
