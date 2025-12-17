@@ -4,27 +4,20 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import About from './pages/About';
-import './App.css';
 
-// This is the main App component that sets up routing
-// It defines which component to show for each URL path
+// Main App component with routing
+// Defines which page component to show for each URL
 function App() {
   return (
-    // Router enables navigation between different pages
     <Router>
-      <div className="App">
-        {/* Navbar appears on all pages */}
+      <div className="min-h-screen bg-background">
+        {/* Navigation bar appears on all pages */}
         <Navbar />
         
-        {/* Routes define which component to show for each path */}
+        {/* Route configuration - maps URLs to components */}
         <Routes>
-          {/* Home page at root URL */}
           <Route path="/" element={<Home />} />
-          
-          {/* Menu page at /menu */}
           <Route path="/menu" element={<Menu />} />
-          
-          {/* About page at /about */}
           <Route path="/about" element={<About />} />
         </Routes>
       </div>

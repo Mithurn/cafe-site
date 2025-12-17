@@ -1,32 +1,60 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+import { Link, useLocation } from 'react-router-dom';
 
-// This component shows the navigation bar at the top of every page
-// It helps users move between different pages of our website
+// Navigation bar component that appears on all pages
+// Uses Tailwind CSS for styling with our custom design system
 function Navbar() {
+  const location = useLocation();
+  
+  // Helper function to check if a link is active
+  const isActive = (path) => location.pathname === path;
+  
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        {/* Cafe logo and name */}
-        <Link to="/" className="navbar-logo">
-          ☕ Cozy Corner Cafe
+    <nav className="sticky top-0 z-50 bg-background shadow-sm">
+      <div className="max-w-container mx-auto px-8 py-6 flex items-center justify-between">
+        {/* Logo */}
+        <Link 
+          to="/" 
+          className="text-3xl font-serif font-semibold text-primary hover:text-secondary transition-colors duration-300"
+        >
+          ☕ Cozy Corner
         </Link>
         
-        {/* Navigation links to different pages */}
-        <ul className="nav-menu">
-          <li className="nav-item">
-            <Link to="/" className="nav-link">
+        {/* Navigation Links */}
+        <ul className="flex items-center gap-10">
+          <li>
+            <Link 
+              to="/" 
+              className={`text-base font-medium tracking-wide transition-all duration-300 ${
+                isActive('/') 
+                  ? 'text-secondary border-b-2 border-secondary pb-1' 
+                  : 'text-textSecondary hover:text-primary'
+              }`}
+            >
               Home
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/menu" className="nav-link">
+          <li>
+            <Link 
+              to="/menu" 
+              className={`text-base font-medium tracking-wide transition-all duration-300 ${
+                isActive('/menu') 
+                  ? 'text-secondary border-b-2 border-secondary pb-1' 
+                  : 'text-textSecondary hover:text-primary'
+              }`}
+            >
               Menu
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-link">
+          <li>
+            <Link 
+              to="/about" 
+              className={`text-base font-medium tracking-wide transition-all duration-300 ${
+                isActive('/about') 
+                  ? 'text-secondary border-b-2 border-secondary pb-1' 
+                  : 'text-textSecondary hover:text-primary'
+              }`}
+            >
               About Us
             </Link>
           </li>
