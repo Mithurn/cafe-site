@@ -2,6 +2,11 @@
 
 A beautiful, multi-page React website for a local cafe featuring a home page, menu with filtering, and about us section.
 
+## Flowchart:
+
+<img width="987" height="545" alt="flowchart" src="https://github.com/user-attachments/assets/d448c6c4-60ee-4fdc-b30c-0f9f7595c674" />
+
+
 ## 🎯 Project Overview
 
 This is a simple yet elegant cafe website built with React that showcases:
